@@ -55,7 +55,7 @@ const Sidebar = () => {
         <ul className="sidebarFriedList">
             {Users.map((u) => (
             <li className="sidebarFriend">
-                <img src={PF+u.profilePicture} className='sidebarImg' alt="" />
+                <img key={u.id} src={PF+u.profilePicture} className='sidebarImg' alt="loading" />
                 <span className="sidebarFriendNa">{u.username}</span>
             </li>
             ))}
